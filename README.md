@@ -1,5 +1,3 @@
-Certainly! If `config.py`, `trace.py`, and `memory.py` are used to generate configuration settings, trace files, and initial memory state respectively, I'll incorporate those details into the README to provide clear instructions on how to use these components for setting up and running simulations. Here’s an updated draft:
-
 ---
 
 # Cache Coherence Protocol Simulation
