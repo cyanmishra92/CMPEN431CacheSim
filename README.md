@@ -301,9 +301,15 @@ This will give you all the details you need for generating the memory access pat
   - For each cache size (keep memory size to 64), plot hitrate vs associtivity
   - Write a comprehensive report reasoning why you see the trends as you see them (correlatig them with the cache class)
   - Now, repeat these exepriments with both LRU and Round Robin cache replacement policy.
+  - Explain how the cache replacement policy impacts the cache hitrate (provide a graphical example).
+  - Now, repeat these exepriments with both LRU and Round Robin cache replacement policy.
+
+  ## Deliverbles (Writing Assignment-1: Mandatory)
+  - Explain how changing different cache parameters (size, associtivity, replacement policy etc.) impacts the hitrate, power, and latency of the cache. 
+  - Since our simulation only simulates hitrates, write  reasoning why you see the trends as you see them (correlatig them with the cache)
   - Explain how the cache replacement policy impacts the cache hitrate (provide a graphical example)
  
-  ## Deliverables (Reading Assignment: Mandatory)
+  ## Deliverables (Writing Assignment-2: Mandatory)
   - Read the MESI protocol paper. It is uplodaed in the repository. (https://github.com/cyanmishra92/CMPEN431CacheSim/blob/main/MESIprotocol.pdf)
   - In a technical report, deatil the functionality of MESI Protocol.
   - Explain how MESI protocol is an improment over MSI protocol.
