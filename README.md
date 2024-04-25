@@ -290,12 +290,11 @@ This will give you all the details you need for generating the memory access pat
 
   ## Deliverables (Simulation: Mandatory)
   - Run the simulation with VI protocol. Keep the trace size to 100
-  - Change the cache size: 4, 8 (default), 16, 32
+  - Change the cache size: 4, 16
   - For each cahce size, change the associativity (default 2)
       - For cache size 4: Assoc 1, 2, 4
-      - For cache size 8: Assoc 1, 2, 4, 8
       - For cache size 16: Assoc 1, 2, 4, 8, 16
-      - For cache size 32: Assoc 1, 2, 4, 16, 32
+
   - Run each of these configurations with memory size 16 (default) and 64
   - Plot the hitrate vs cache size for both memory sizes
   - For each cache size (keep memory size to 64), plot hitrate vs associtivity
