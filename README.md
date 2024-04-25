@@ -261,9 +261,9 @@ For example:
 ## FLow
 - Mandatory: Run the seeding.py. Without this you can not proceed with the project. This ensures a unique trace for your group is generated.
   ```
-  python seeding.py <Last Name 1> <ID1> <Last Name 2> <ID2>
+  python seeding.py <Last Name 1> <ID 1> <Last Name 2> <ID 2>
   ```
-  If you are doing the project alone, put <Last Name 2> and <ID2> as **MISHRA 886123558**
+  If you are doing the project alone, put <Last Name 2> and <ID 2> as **MISHRA 886123558**
   
 - First run the config.py to generate the config you want. 
   ```
