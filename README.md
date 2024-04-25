@@ -304,7 +304,7 @@ This will give you all the details you need for generating the memory access pat
   - Explain how the cache replacement policy impacts the cache hitrate (provide a graphical example)
  
   ## Deliverables (Reading Assignment: Mandatory)
-  - Read the MESI protocol paper.
+  - Read the MESI protocol paper. It is uplodaed in the repository. (https://github.com/cyanmishra92/CMPEN431CacheSim/blob/main/MESIprotocol.pdf)
   - In a technical report, deatil the functionality of MESI Protocol.
   - Explain how MESI protocol is an improment over MSI protocol.
   - Write the drawbacks of MESI protocl and what new protocols you can find in current research (at least one), that is an improvement over MESI?
