@@ -255,3 +255,55 @@ For example:
 - The memory initialization file is crucial for ensuring that simulations start with a consistent and predefined set of data in memory, which is essential for reproducible results in cache coherence studies.
 
 ---
+
+# Usage Flow and Deliverables:
+
+## FLow
+- First run the config.py to generate the config you want. 
+  ```
+  python config.py --help
+  ```
+This will give you all the details you need for generating the config.
+
+- Next generate the memory footprint by running memory.py
+  ```
+  python memory.py --help
+  ```
+This will give you all the details you need for generating the memory.
+- Next generate the memory trace by running trace.py
+  ```
+  python trace.py --help
+  ```
+This will give you all the details you need for generating the memory access pattern trace.
+- Once you have all the configs (extension .json, e.g. config.json), the memoryfootprint (extension .mem, e.g. memory.mem) and trace (extension .tr, e.g. trace.tr), you can run the main simulation
+- To learn how to run the simulation run:
+  ```
+  python main.py --help
+  ```
+  This will tell you what all you need to provide the script to run. This will run simulations.
+
+  ## Deliverables (Simulation: Mandatory)
+  - Run the simulation with VI protocol. Keep the trace size to 100
+  - Change the cache size: 4, 8 (default), 16, 32
+  - For each cahce size, change the associativity (default 2)
+      - For cache size 4: Assoc 1, 2, 4
+      - For cache size 8: Assoc 1, 2, 4, 8
+      - For cache size 16: Assoc 1, 2, 4, 8, 16
+      - For cache size 32: Assoc 1, 2, 4, 16, 32
+  - Run each of these configurations with memory size 16 (default) and 64
+  - Plot the hitrate vs cache size for both memory sizes
+  - For each cache size (keep memory size to 64), plot hitrate vs associtivity
+  - Write a comprehensive report reasoning why you see the trends as you see them (correlatig them with the cache class)
+  - Now, repeat these exepriments with both LRU and Round Robin cache replacement policy.
+  - Explain how the cache replacement policy impacts the cache hitrate (provide a graphical example)
+ 
+  ## Deliverables (Reading Assignment: Mandatory)
+  - Read the MESI protocol paper.
+  - In a technical report, deatil the functionality of MESI Protocol.
+  - Explain how MESI protocol is an improment over MSI protocol.
+  - Write the drawbacks of MESI protocl and what new protocols you can find in current research (at least one), that is an improvement over MESI?
+    
+  ## Deliverables (Bug Fix: Extra Credit)
+  - Observe how the MSI and MESI protocols are behaving - if they are behaving right.
+  - We have small bugs in both MSI and MESI protocls. You can fix either one of them (or both).
+  - Prove that you have fixed the bug by showing a trace and your observed output and the theoretical outputs
