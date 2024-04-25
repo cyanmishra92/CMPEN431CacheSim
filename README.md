@@ -259,6 +259,12 @@ For example:
 # Usage Flow and Deliverables:
 
 ## FLow
+- Mandatory: Run the seeding.py. Without this you can not proceed with the project. This ensures a unique trace for your group is generated.
+  ```
+  python seeding.py <Last Name 1> <ID1> <Last Name 2> <ID2>
+  ```
+  If you are doing the project alone, put <Last Name 2> and <ID2> as **MISHRA 886123558**
+  
 - First run the config.py to generate the config you want. 
   ```
   python config.py --help
