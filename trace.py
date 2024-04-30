@@ -15,8 +15,9 @@ def read_uuid_from_file(uuid_file):
 
 def generate_trace_file(filename, num_operations, num_cores, max_address, seed):
     """Generates a trace file with random read (RD) and write (WR) operations."""
-    # Seed the random number generator for reproducibility
-    random.seed(uuid.UUID(seed))
+    # Convert the seed from UUID string to an integer
+    seed_uuid = uuid.UUID(seed)
+    random.seed(seed_uuid.int)  # Seed the random number generator for reproducibility
     operations = ['RD', 'WR']
     with open(filename, 'w') as file:
         for _ in range(num_operations):
