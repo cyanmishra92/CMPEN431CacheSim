@@ -16,7 +16,8 @@ def read_uuid_from_file(uuid_file):
 def initialize_memory(filename, num_entries, seed):
     """Initializes a memory file with random values for each memory location."""
     # Seed the random number generator for reproducibility
-    random.seed(uuid.UUID(seed))
+    seed_uuid = uuid.UUID(seed)
+    random.seed(seed_uuid.int)  # Convert UUID to a large integer for seeding
     with open(filename, 'w') as file:
         for location in range(num_entries):
             value = random.randint(0, 255)  # Generate random values between 0 and 255
